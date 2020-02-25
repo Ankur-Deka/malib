@@ -40,14 +40,13 @@ python examples/render_particle.py
 Renders, prints statistics and generates output file
 
 ### npy format
-* There is a .npy file corresponding to the same 10 episodes.
-	* Use the command:
-	all_obs = ```np.load('simple_predator_prey_different_rew.npy', allow_pickle = True).item()```
-	* all_obs is a dictionary of 10 elements corresponding to the 110 episodes
-	* all_obs['0'] is a Tx4x4 dimensional array
-		* 1st dimension corresponds to the time steps
-		* 2nd dimension corresponds to the 4 agents, I think first 3 are predators and the 4th one is the prey
-		* 3rd dimension contains [xvel, yvel, xpos, ypos]
+* Use the command:
+  ```all_obs = np.load('simple_predator_prey_different_rew.npy', allow_pickle = True).item()```
+* all_obs is a dictionary of 10 elements corresponding to the 110 episodes
+* all_obs['0'] is a Tx4x4 dimensional array
+* 1st dimension corresponds to the time steps
+* 2nd dimension corresponds to the 4 agents, I think first 3 are predators and the 4th one is the prey
+* 3rd dimension contains [xvel, yvel, xpos, ypos]
     
 ### csv format
 * size (Tx4)x4. T is length of episode 
