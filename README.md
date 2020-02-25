@@ -4,6 +4,12 @@
 
 # Multi-Agent Reinforcement Learning Framework
 
+In this fork, I've made a new environment called simple_predator_prey, by modifying the simple_tag multi agent particle environment. The file is $multiagent/scenarios/simple_predator_prey.py$
+
+The environment has the following features:
+1) Predators catch the prey when all of them are close enough to the prey
+2) Predators can be encouraged to surround the prey from all sides by setting the 
+
 This Framework aims to provide an easy to use toolkit for
 Multi-Agent Reinforcement Learning research.
 Overall architecture:
