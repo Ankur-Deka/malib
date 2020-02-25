@@ -24,46 +24,19 @@ Required Python Version: >= 3.6
 
 * Using Local Python Environment:
 
- ```shell
-cd malib
-sudo pip3 install -r requirements.txt
-sudo pip3 install -e .
- ```
-
-* Using virtualenv Environment:
-
 ```shell
 cd malib
-python3 -m venv env
-source env/bin/activate
-pip3 install -r requirements.txt
-pip3 install -e .
-```
-
-* Using Conda Environment:
-
-```shell
-cd malib
-conda env create --file=environment.yml
+conda env create --file=environment2.yml
 conda activate malib
 conda develop ./
 ```
 
-or
 
-```shell
-cd malib
-conda env create -n malib python=3.7
-conda activate malib
-pip install -r requirements.txt
-conda develop ./
-```
-
-## Run Example
+## Train
 
 ```shell
 cd examples
-python run_trainer.py
+python run_particle.py
 ```
 
 ## Testing Code
