@@ -50,12 +50,12 @@ Renders, prints statistics and generates output file
 		* 3rd dimension contains [xvel, yvel, xpos, ypos]
     
 ### csv format
-  *	size (Tx4)x4. T is length of episode 
-  * 	1st 4x4 contains data for t=1, 2nd 4x4 contains data for t = 2, ...
-  *	In 1st 4x4 elements:
-    *	1st 3 rows contain data for 3 predators
-    *	last row contains data for single prey
-    *	each row has [xvel, yvel, xpos, ypos]
+* size (Tx4)x4. T is length of episode 
+* 1st 4x4 contains data for t=1, 2nd 4x4 contains data for t = 2, ...
+* In 1st 4x4 elements:
+	* 1st 3 rows contain data for 3 predators
+	* last row contains data for single prey
+	* each row has [xvel, yvel, xpos, ypos]
 
 
 ## Reference Projects
